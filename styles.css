@@ -1,0 +1,91 @@
+h1 {
+  color: rgba(26, 128, 0, 0.795);
+  margin-left: 20px;
+  width: 200px;
+  height: 100px;
+  font-family: Verdana;
+  text-align: left;
+  white-space: nowrap;
+}
+
+h2 {
+  color:rgba(0, 0, 0, 0.795);
+  text-align: right;
+}
+
+#points {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  position: fixed;
+  right: 300px;
+  top: 120px;
+}
+
+#controls {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+#spin {
+  font-size: xx-large;
+  height: 50px;
+  width: 100px;
+}
+
+#first {
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid rgb(117, 76, 76);
+  margin: 10px;
+  display: inline-block;
+  margin-inline-start: 350px; 
+  background: rgb(155, 63, 35);
+  vertical-align:top; 
+}
+
+#second {
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid rgb(117, 76, 76);
+  margin: 10px;
+  display: inline-block;
+  background: rgb(155, 63, 35);
+  vertical-align:top; 
+}
+
+#third {
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid rgb(117, 76, 76);
+  margin: 10px;
+  display: inline-block;
+  background: rgb(155, 63, 35);
+  vertical-align:top; 
+}
+
+#msg {
+  color: rgb(21, 255, 0);
+  text-align: center;
+  font-size: xx-large;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  background: crimson;
+}
+
+p {
+  font-size: 70px;
+  text-align: center;
+}
+
+body {
+  background-image: url("cfu.jpg");
+}

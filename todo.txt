@@ -1,0 +1,3 @@
+4. add images
+5. add price variations (coconut = 5, star = 10 etc.)
+6. Autoplay function

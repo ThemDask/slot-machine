@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slot Machine</title>
+  <link rel="stylesheet" href="/styles.css" >
+</head>
+
+<body>
+  <div id='title'>
+    <h1>Welcome to Corfiot Slot machine!</h1>
+  </div>
+  <div id='points'>
+    <h2>POINTS: <var id='pts'></var> </h2>
+  </div>
+
+<div id='first'>
+  <p id='firsttext'>&#10067</p>
+</div>
+<div id='second'>
+  <p id='secondtext'>&#10067</p>
+</div>
+<div id='third'>
+  <p id="thirdtext">&#10067</p>
+</div>
+
+<div id='msg' style="display:none">BIG WIN !!!</div>
+
+<div id="controls">
+  <button type="button" id="spin" onclick="randomize()">SPIN</button>
+  <label>
+    <input type="checkbox" name="autoplay" id="autoplay" />
+    Autoplay
+  </label>
+</div>
+
+  <script src="/app.js"></script>
+
+</body>
+</html>
