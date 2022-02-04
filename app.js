@@ -9,21 +9,29 @@ var a = document.getElementById('firsttext');
 var b = document.getElementById('secondtext');
 var c = document.getElementById('thirdtext');
 var msg = document.getElementById("msg");
+
+
+
 // ----- main button function ----- //
 function randomize() {
-    
-    const emojis = ["&#127775", "&#128178", "&#128329", "&#128757", "&#129381", "&#129505", "&#127820"];
-    const random_one = Math.floor(Math.random() * emojis.length);
-    const random_two = Math.floor(Math.random() * emojis.length);
-    const random_three = Math.floor(Math.random() * emojis.length);
 
-    a.innerHTML= emojis[random_one];
-    b.innerHTML= emojis[random_two];
-    c.innerHTML= emojis[random_three];
+// - create start-of function - //
+spin.play()
+pts.innerHTML = Number(pts.innerHTML) - Number(1);
+
+const emojis = ["&#127775", "&#128178", "&#128329", "&#128757", "&#129381", "&#129505", "&#127820"];
+const random_one = Math.floor(Math.random() * emojis.length);
+const random_two = Math.floor(Math.random() * emojis.length);
+const random_three = Math.floor(Math.random() * emojis.length);
+// -                        - //
+    setTimeout(() => {a.innerHTML= emojis[random_one];}, 0100);
+    setTimeout(() => {b.innerHTML= emojis[random_two];}, 0300);
+    setTimeout(() => {c.innerHTML= emojis[random_three];}, 0600);
 
     setEnabled();
-    checkwin();
+    setTimeout(() => {checkwin()}, 0700);
 }
+
 //  -----Supportive functions----- //
 function checkwin() {
   if (a.innerHTML === b.innerHTML && b.innerHTML === c.innerHTML) {
@@ -32,8 +40,8 @@ function checkwin() {
     win.play()
   } else {
     msg.style.display = 'none';
-    pts.innerHTML = Number(pts.innerHTML) - Number(1);
-    spin.play()
+    
+    //spin.play()
     }
 }
 

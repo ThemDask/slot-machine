@@ -1,25 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
+
+
+* {
+  font-family: Acme;
+}
+
 h1 {
-  color: rgba(26, 128, 0, 0.795);
+  color: rgba(118, 228, 91, 0.795);
   margin-left: 20px;
   width: 200px;
   height: 100px;
-  font-family: Verdana;
   text-align: left;
+  font-family: Acme;
   white-space: nowrap;
 }
 
 h2 {
-  color:rgba(0, 0, 0, 0.795);
+  color:rgba(118, 228, 91, 0.795);
   text-align: right;
+  font-family: Acme;
 }
 
 #points {
-  height: 100px;
-  width: 100px;
-  margin: 10px;
+  height: auto;
+  width: auto;
+  margin: 20px;
   position: fixed;
-  right: 300px;
-  top: 120px;
+  right: 200px;
+  top: 150px;
+  border-radius: 15px;
+  padding: 10px;
+  border-color: rgba(118, 228, 91, 0.795);
+  border-style:ridge;
+  white-space: nowrap;
 }
 
 #controls {
@@ -33,17 +47,19 @@ h2 {
   font-size: xx-large;
   height: 50px;
   width: 100px;
+  background-color: rgb(0, 255, 106);
 }
 
 #first {
   width: 200px;
   height: 300px;
   padding: 10px;
-  border: 2px solid rgb(117, 76, 76);
-  margin: 10px;
+  border: 4px solid rgb(114, 20, 202);
+  border-radius: 5%;
+  margin: 0px;
   display: inline-block;
   margin-inline-start: 350px; 
-  background: rgb(155, 63, 35);
+  background: rgb(27, 17, 27);
   vertical-align:top; 
 }
 
@@ -51,10 +67,11 @@ h2 {
   width: 200px;
   height: 300px;
   padding: 10px;
-  border: 2px solid rgb(117, 76, 76);
-  margin: 10px;
+  border: 4px solid rgb(114, 20, 202);
+  border-radius: 5%;
+  margin: 0px;
   display: inline-block;
-  background: rgb(155, 63, 35);
+  background: rgb(27, 17, 27);
   vertical-align:top; 
 }
 
@@ -62,10 +79,11 @@ h2 {
   width: 200px;
   height: 300px;
   padding: 10px;
-  border: 2px solid rgb(117, 76, 76);
-  margin: 10px;
+  border: 4px solid rgb(114, 20, 202);
+  border-radius: 5%;
+  margin: 0px;
   display: inline-block;
-  background: rgb(155, 63, 35);
+  background: rgb(27, 17, 27);
   vertical-align:top; 
 }
 
@@ -87,5 +105,7 @@ p {
 }
 
 body {
-  background-image: url("cfu.jpg");
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
