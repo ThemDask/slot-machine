@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Slot Machine</title>
-  <link rel="stylesheet" href="/styles.css" >
+  <link rel="stylesheet" href="styles.css" >
 </head>
 
 <body>
@@ -30,15 +30,34 @@
 
 <div id="controls">
   <button type="button" id="spin" onclick="randomize()">SPIN</button>
+  <!--- TO DO ---> 
   <label>
-    <!--- TO DO ---> 
     <input type="checkbox" name="autoplay" id="autoplay" disabled/>
     Autoplay(off)
   </label>
     <!--- TO DO --->
 </div>
 
-  <script src="/app.js"></script>
+<div id='infobutton'>
+<button type="button" id='info' onclick="">INFO</button>
+</div>
+<div id='infobox' class="modal">
+  <div class="info-content">
+    <span class="close">&times;</span>
+    <p id='infotext'>VALUES<br>
+      &#127775 = 100pts<br>
+      &#128178 = 100pts<br>
+      &#128329 = 50pts<br>
+      &#128757 = 50pts<br>
+      &#129381 = 50pts<br>
+      &#129505 = 50pts<br>
+      &#127820 = 50pts<br>
+    </p>
+  </div>
+</div>
 
-</body>
+
+  <script src="app.js"></script>
+
+  </body>
 </html>

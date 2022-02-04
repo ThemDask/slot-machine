@@ -1,4 +1,4 @@
-// ---- declare variables ---- //
+// ---- randomize variables ---- //
 var pts = document.getElementById('pts');
 pts.innerHTML = 100;
 
@@ -9,12 +9,15 @@ var a = document.getElementById('firsttext');
 var b = document.getElementById('secondtext');
 var c = document.getElementById('thirdtext');
 var msg = document.getElementById("msg");
+// ---- ------------------- ---- //
 
+// --- infobox variables --- //
+var modal = document.getElementById("infobox");
+var btn = document.getElementById("info");
+var span = document.getElementsByClassName("close")[0];
+// ---  ---------------- --- //
 
-
-// ----- main button function ----- //
 function randomize() {
-
 // - create start-of function - //
 spin.play()
 pts.innerHTML = Number(pts.innerHTML) - Number(1);
@@ -40,8 +43,6 @@ function checkwin() {
     win.play()
   } else {
     msg.style.display = 'none';
-    
-    //spin.play()
     }
 }
 
@@ -51,3 +52,17 @@ function checkwin() {
       document.getElementById('spin').disabled = false;
     }, 1300);
 }
+
+// ---- INFOBOX ---- //
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// ---- INFOBOX END ---- //
