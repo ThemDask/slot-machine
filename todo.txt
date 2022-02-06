@@ -1,5 +1,4 @@
 - add images
-- add price variations (coconut = 5, star = 10 etc.)
+- FIX price variations (coconut = 5, star = 10 etc.)
 - Autoplay function
-- add info button
-- cleanup js code
+- boxes to light up on spin
