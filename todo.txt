@@ -1,4 +1,4 @@
 - add images
-- FIX price variations (coconut = 5, star = 10 etc.)
 - Autoplay function
-- boxes to light up on spin
+- more slots x more combos
+- add bet 
