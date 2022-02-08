@@ -9,9 +9,16 @@ var dollar = "💲";
 var win = new Audio('win.mp3');
 var spin = new Audio('spin.mp3');
 
+var bet = 1;
+var bet1 = document.getElementById('bet1');
+var bet2 = document.getElementById('bet2');
+var bet3 = document.getElementById('bet3');
+var bet4 = document.getElementById('bet4');
+
 var box_a = document.getElementById('first');
 var box_b = document.getElementById('second');
 var box_c = document.getElementById('third');
+
 var a = document.getElementById('firsttext');
 var b = document.getElementById('secondtext');
 var c = document.getElementById('thirdtext');
@@ -24,6 +31,10 @@ var msg = document.getElementById("msg");
 var modal = document.getElementById("infobox");
 var btn = document.getElementById("info");
 var span = document.getElementsByClassName("close")[0];
+
+// starting bet
+bet = 1;
+bet1.classList.add("bet_on");
 
 // main function
 function randomize() {
@@ -54,10 +65,10 @@ function checkwin() {
   if (wincount === 1) {
     if (a.innerHTML == star || a.innerHTML == dollar){      
       bigwinmsg.style.display = 'block';
-      pts.innerHTML = Number(pts.innerHTML) + Number(100);
+      pts.innerHTML = Number(pts.innerHTML) + Number(100) * bet;
     } else {
       winmsg.style.display = 'block';
-      pts.innerHTML = Number(pts.innerHTML) + Number(50);
+      pts.innerHTML = Number(pts.innerHTML) + Number(50) * bet;
     }
   } else {
     return;
@@ -75,7 +86,7 @@ function checkwin() {
 //randomize slots
 function spinstart() {
   spin.play()
-  pts.innerHTML = Number(pts.innerHTML) - Number(1);
+  pts.innerHTML = Number(pts.innerHTML) - Number(bet);
 
   r1 = Math.floor(Math.random() * emojis.length); 
   r2 = Math.floor(Math.random() * emojis.length);  
@@ -110,5 +121,33 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+}
+
+function placebet(elem) {
+  if (elem == 'bet1') {
+    bet = 1;
+    bet1.classList.add("bet_on");
+    bet2.classList.remove("bet_on");
+    bet3.classList.remove("bet_on");
+    bet4.classList.remove("bet_on");
+  } else if (elem == 'bet2'){
+    bet = 2;
+    bet2.classList.add("bet_on");
+    bet1.classList.remove("bet_on");
+    bet3.classList.remove("bet_on");
+    bet4.classList.remove("bet_on");
+  } else if (elem == 'bet3'){
+    bet = 5;
+    bet3.classList.add("bet_on");
+    bet2.classList.remove("bet_on");
+    bet1.classList.remove("bet_on");
+    bet4.classList.remove("bet_on");
+  } else {
+    bet = 10;
+    bet4.classList.add("bet_on");
+    bet2.classList.remove("bet_on");
+    bet3.classList.remove("bet_on");
+    bet1.classList.remove("bet_on");
   }
 }

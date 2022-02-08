@@ -64,9 +64,6 @@ body {
   background-color: rgb(0, 255, 106);
 }
 
-first::before {
-  content: 'hellooooooooo';
-}
 #first {
   width: 200px;
   height: 300px;
@@ -130,6 +127,41 @@ first::before {
 #info {
   text-align: center;
   font-size: 20px;
+}
+
+/* BETTING BUTTONS */
+.betbutton {
+  display: inline-block;
+  position: relative;
+  right: 65px;
+}
+
+.bet { /*default bet button class*/
+  color: rgba(118, 228, 91, 0.795);
+  background-color: rgb(27, 17, 27);
+}
+
+.bet_on {  /*bet button class when selected*/
+  color: rgba(118, 228, 91, 0.795);
+  background-color: rgb(114, 20, 202);
+}
+
+#sub_buttons {
+  text-align: center;
+  left: 30%;
+  overflow: hidden;
+}
+
+#bet_text {
+  color: rgba(118, 228, 91, 0.795);
+  font-size: 25px;
+}
+
+#bet_text_cont {
+  position: relative;
+  display: inline-block;
+  left: 480px;
+  top: 55px;
 }
 
 /* INFOBOX */

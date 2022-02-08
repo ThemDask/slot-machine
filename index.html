@@ -36,23 +36,43 @@
     <input type="checkbox" name="autoplay" id="autoplay" disabled/>
     Autoplay(off)
   </label>
-    <!--- TO DO --->
+  <!--- TO DO --->
+</div>
+
+
+<div id="bet_text_cont">
+  <p id="bet_text">BET:</p>
+</div>
+
+<div id="sub_buttons">
+  <div class="betbutton">
+    <button type="button"  class='bet' id="bet1" onclick="placebet(this.id)">1.00 (1x)</button>
+  </div>
+  <div class="betbutton">
+    <button type="button"  class='bet' id="bet2" onclick="placebet(this.id)">2.00 (2x)</button>
+  </div>
+  <div class="betbutton">
+    <button type="button"  class='bet' id="bet3" onclick="placebet(this.id)">5.00 (5x)</button>
+  </div>
+  <div class="betbutton">
+    <button type="button"  class='bet' id="bet4" onclick="placebet(this.id)">10.00(10x)</button>
+  </div>
 </div>
 
 <div id='infobutton'>
-<button type="button" id='info' onclick="">INFO</button>
+  <button type="button" id='info' onclick="">INFO</button>
 </div>
 <div id='infobox' class="modal">
   <div class="info-content">
     <span class="close">&times;</span>
     <p id='infotext'>VALUES<br>
-      &#127775 = 100pts<br>
-      &#128178 = 100pts<br>
-      &#128329 = 50pts<br>
-      &#128757 = 50pts<br>
-      &#129381 = 50pts<br>
-      &#129505 = 50pts<br>
-      &#127820 = 50pts<br>
+      &#127775 = 100$<br>
+      &#128178 = 100$<br>
+      &#128329 = 50$<br>
+      &#128757 = 50$<br>
+      &#129381 = 50$<br>
+      &#129505 = 50$<br>
+      &#127820 = 50$<br>
     </p>
   </div>
 </div>
@@ -60,4 +80,3 @@
   <script src="app.js"></script>
   </body>
 </html>
-
