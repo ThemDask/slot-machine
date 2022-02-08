@@ -2,7 +2,7 @@
 var pts = document.getElementById('pts');
 pts.innerHTML = 100;
 
-const emojis = ["&#127775", "&#128178", "&#128329", "&#128757"/*, "&#129381", "&#129505", "&#127820"*/];
+const emojis = ["&#127775", "&#128178", "&#128329", "&#128757", "&#129381", "&#129505", "&#127820"];
 var wincount = 0;
 var star = "🌟";
 var dollar = "💲";
