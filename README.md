@@ -17,7 +17,7 @@ Work In Progress.
 - replace emojis with custom logos/icons
 - create background/animations/FX
 - more complex slots (3x3)
-- win conditions: the machine should match vertically & diagonaly instead of only horizonally
+- win conditions: the machine should match vertically & diagonally instead of only horizontally
 - more sound! more music!
 
 
