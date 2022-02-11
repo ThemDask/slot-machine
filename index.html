@@ -16,14 +16,16 @@
     <h2>COINS: <var id='pts'></var> </h2>
   </div>
 
-<div id='first'>
-  <p id='firsttext'>&#10067</p>
-</div>
-<div id='second'>
-  <p id='secondtext'>&#10067</p>
-</div>
-<div id='third'>
-  <p id="thirdtext">&#10067</p>
+<div id="container">
+  <div id='first'>
+    <p id='firsttext'>&#10067</p>
+  </div>
+  <div id='second'>
+    <p id='secondtext'>&#10067</p>
+  </div>
+  <div id='third'>
+    <p id="thirdtext">&#10067</p>
+  </div>
 </div>
 
 <div id='winmsg' style="display:none"> WIN !!!</div>
@@ -31,14 +33,13 @@
 
 <div id="controls">
   <button type="button" id="spin" onclick="randomize()">SPIN</button>
-  <!--- TO DO ---> 
-  <label>
-    <input type="checkbox" name="autoplay" id="autoplay" disabled/>
-    Autoplay(off)
-  </label>
-  <!--- TO DO --->
-</div>
 
+  <label id="autopl">
+    <input type="hidden" value=0 name="autoplay"  /> 
+    <input type="checkbox" value=1 name="autoplay"onclick="autoplay()"/>
+    Autoplay 
+  </label>
+</div>
 
 <div id="bet_text_cont">
   <p id="bet_text">BET:</p>

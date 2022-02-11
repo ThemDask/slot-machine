@@ -1,4 +1,4 @@
 - add images
-- Autoplay function
 - more slots x more combos
-- add bet 
+- add music button
+- fix css

@@ -1,4 +1,4 @@
-// ---- declare randomize variables ---- //
+// ---- declare variables ---- //
 var pts = document.getElementById('pts');
 pts.innerHTML = 100;
 
@@ -9,11 +9,16 @@ var dollar = "💲";
 var win = new Audio('win.mp3');
 var spin = new Audio('spin.mp3');
 
+let nIntervId;
+let auto_on;
+
+var i = 0;
 var bet = 1;
 var bet1 = document.getElementById('bet1');
 var bet2 = document.getElementById('bet2');
 var bet3 = document.getElementById('bet3');
 var bet4 = document.getElementById('bet4');
+var auto = document.getElementsByName("autoplay");
 
 var box_a = document.getElementById('first');
 var box_b = document.getElementById('second');
@@ -59,6 +64,9 @@ function checkwin() {
   if (a.innerHTML === b.innerHTML && a.innerHTML === c.innerHTML && b.innerHTML === c.innerHTML) {
     win.play();
     wincount = 1;
+    if (auto_on) {
+      setTimeout(() => {alert('win! Press ok to continue..');}, 0100);
+    }   
   } else {
     return; // do nothing
   } 
@@ -75,7 +83,7 @@ function checkwin() {
   }
 }
 
-// ---- enable/disable button ---- //
+// enable/disable spin button
   function setEnabled() {
     document.getElementById('spin').disabled = 'disabled';
     setTimeout(function() {
@@ -83,7 +91,7 @@ function checkwin() {
     }, 1300);
 }
 
-//randomize slots
+// randomize slots
 function spinstart() {
   spin.play()
   pts.innerHTML = Number(pts.innerHTML) - Number(bet);
@@ -124,6 +132,7 @@ window.onclick = function(event) {
   }
 }
 
+// betting function 
 function placebet(elem) {
   if (elem == 'bet1') {
     bet = 1;
@@ -149,5 +158,35 @@ function placebet(elem) {
     bet2.classList.remove("bet_on");
     bet3.classList.remove("bet_on");
     bet1.classList.remove("bet_on");
+  }
+}
+
+// --- Autoplay functions --- //
+function autoplay() {
+  if (!nIntervId) {
+    nIntervId = setInterval(randomize, 1500);
+  }
+  i++;
+  checkauto();
+  
+}
+
+function checkauto() {
+  if (i % 2 == 1) {
+    auto_on = true;
+    console.log(auto_on);
+    nIntervId;
+  } else if  (i % 2 == 0) {
+    auto_on = false;
+    clearInterval(nIntervId);
+    nIntervId = 0;
+    console.log(auto_on);
+  }
+}
+
+function checkautowin() {
+  if (wincount == 1) {
+    
+    console.log('win win win');
   }
 }
