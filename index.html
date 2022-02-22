@@ -10,22 +10,46 @@
 
 <body>
   <div id='title'>
-    <h1>Slot Machine pre-Alpha</h1>
+    <h1>Emoji Madness v0.1</h1>
   </div>
   <div id='points'>
     <h2>COINS: <var id='pts'></var> </h2>
   </div>
 
 <div id="container">
-  <div id='first'>
-    <p id='firsttext'>&#10067</p>
+ <div id="firstrow">
+  <div id='first1' class="spinner">
+    <p id='textone1' class="spintext">&#10067</p>
   </div>
-  <div id='second'>
-    <p id='secondtext'>&#10067</p>
+  <div id='second1' class="spinner">
+    <p id='texttwo1' class="spintext">&#10067</p>
   </div>
-  <div id='third'>
-    <p id="thirdtext">&#10067</p>
+  <div id='third1' class="spinner">
+    <p id="textthree1" class="spintext">&#10067</p>
   </div>
+ </div>
+ <div id="secondrow">
+  <div id='first2' class="spinner">
+    <p id='textone2' class="spintext">&#10067</p>
+  </div>
+  <div id='second2' class="spinner">
+    <p id='texttwo2' class="spintext">&#10067</p>
+  </div>
+  <div id='third2' class="spinner">
+    <p id="textthree2" class="spintext">&#10067</p>
+  </div>
+ </div>
+ <div id="thirdrow">
+  <div id='first3' class="spinner">
+    <p id='textone3' class="spintext">&#10067</p>
+  </div>
+  <div id='second3' class="spinner">
+    <p id='texttwo3' class="spintext">&#10067</p>
+  </div>
+  <div id='third3' class="spinner">
+    <p id="textthree3" class="spintext">&#10067</p>
+  </div>
+ </div>
 </div>
 
 <div id='winmsg' style="display:none"> WIN !!!</div>
@@ -37,9 +61,10 @@
   <label id="autopl">
     <input type="hidden" value=0 name="autoplay"  /> 
     <input type="checkbox" value=1 name="autoplay"onclick="autoplay()"/>
-    Autoplay 
+    Autoplay (beta)
   </label>
 </div>
+
 
 <div id="bet_text_cont">
   <p id="bet_text">BET:</p>
@@ -66,18 +91,26 @@
 <div id='infobox' class="modal">
   <div class="info-content">
     <span class="close">&times;</span>
-    <p id='infotext'>VALUES<br>
+    <p id='infotext'>
+      MATCH ANY 3 EMOJIS<br>
+      🡲🡰 | 🡵🡷 |🡱🡳<br>
+      AND WIN! <br>
+      <br>
+      VALUES:<br>
       &#127775 = 100$<br>
       &#128178 = 100$<br>
-      &#128329 = 50$<br>
-      &#128757 = 50$<br>
+      &#128293 = 50$<br>
+      &#128171 = 50$<br>
       &#129381 = 50$<br>
       &#129505 = 50$<br>
       &#127820 = 50$<br>
+      &#127756 = 50$<br>
+      &#128591 = 50$<br>
+      &#128526 = 50$<br>
     </p>
   </div>
 </div>
 
-  <script src="app.js"></script>
+<script src="app.js"></script>
   </body>
 </html>

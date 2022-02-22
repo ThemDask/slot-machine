@@ -1,4 +1,7 @@
-- add images
-- more slots x more combos
+- add images in place of emojis (later)
 - add music button
 - fix css
+- organise js
+- player decides on autoplay duration(turns)
+- add wildcard
+- add multi win
