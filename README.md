@@ -7,7 +7,7 @@ Simple slot machine built using core Javascript/HTML5/CSS3.
 Work In Progress.
 
 ## Features
-- 3 'spinners' with emojis
+- 9 'spinners' with emojis
 - spinning functionality
 - betting functionality
 - info modal with winning combinations
@@ -16,14 +16,9 @@ Work In Progress.
 ### Stuff to do
 - replace emojis with custom logos/icons
 - create background/animations/FX
-- more complex slots (3x3)
-- win conditions: the machine should match vertically & diagonally instead of only horizontally
 - more sound! more music!
+- add wildcard 
 
-
-### Sample Screenshot:
-
-![scr](https://user-images.githubusercontent.com/25323744/153589789-26e4225f-26ad-401d-866d-7436b07156bf.png)
 
 
 
