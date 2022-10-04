@@ -69,7 +69,7 @@ var modal = document.getElementById("infobox");
 var btn = document.getElementById("info");
 var span = document.getElementsByClassName("close")[0];
 
-document.body.style.zoom="100%"
+document.body.style.zoom="125%"
 
 // starting bet
 bet = 1;
