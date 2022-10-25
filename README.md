@@ -2,9 +2,11 @@
 
 ### https://themdask.github.io/slot-machine/
 
-Simple slot machine built using core Javascript/HTML5/CSS3. 
+### Simple slot machine built using core Javascript/HTML5/CSS3. 
 
-Work In Progress.
+![alt text](https://github.com/ThemDask/slot-machine/blob/master/assets/22.png)
+
+
 
 ## Features
 - 9 'spinners' with emojis
